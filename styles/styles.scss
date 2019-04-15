@@ -7,14 +7,13 @@ h1 {
   text-align: center;
 }
 
-
-.search__container {
+.container {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 
-  input {
+  .item {
     height: 16px;
     width: 128px;
     margin: 12px;
@@ -22,7 +21,7 @@ h1 {
     border-radius: 2px;
   }
 
-  button {
+  .add__item {
     background-color: grey;
     color: white;
     padding: 8px 32px;
@@ -35,17 +34,28 @@ h1 {
   margin: 48px 52px;
   background-color: darkgray;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .list__content {
   padding: 0;
   list-style: none;
-  text-align: center;
+
+  li {
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center; 
+  }
 
   li:nth-child(even) {
-    background-color: lightblue;
+    p {
+      background-color: lightblue;
+    }
+  }
+
+  p {
+    margin: 32px;
   }
 }
 

@@ -7,7 +7,7 @@ h1 {
   text-align: center;
 }
 
-.search__container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@ h1 {
           align-items: center;
 }
 
-.search__container input {
+.container .item {
   height: 16px;
   width: 128px;
   margin: 12px;
@@ -31,7 +31,7 @@ h1 {
   border-radius: 2px;
 }
 
-.search__container button {
+.container .add__item {
   background-color: grey;
   color: white;
   padding: 8px 32px;
@@ -45,22 +45,38 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .list__content {
   padding: 0;
   list-style: none;
-  text-align: center;
 }
 
-.list__content li:nth-child(even) {
+.list__content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list__content li:nth-child(even) p {
   background-color: lightblue;
+}
+
+.list__content p {
+  margin: 32px;
 }
 /*# sourceMappingURL=styles.css.map */
