@@ -27,6 +27,8 @@ h1 {
   height: 16px;
   width: 128px;
   margin: 12px;
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
 .search__container button {
@@ -34,7 +36,7 @@ h1 {
   color: white;
   padding: 8px 32px;
   border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .list__container {
