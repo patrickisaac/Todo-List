@@ -3,9 +3,10 @@ window.onload = function() {
   button.onclick = function(event) {
     event.preventDefault()
     const item = document.querySelector('.item').value
+    const listContent = document.querySelector('.list__content')
     console.log(item)
 
-    item.appendChild(addItem(item))
+    listContent.appendChild(addItem(item))
   }
 }
 
@@ -13,6 +14,7 @@ const addItem = (value) => {
   const newItem = document.createElement('li')
   newItem.innerHTML = `
   <p>${value}</p>
+  <button>Task Complete</button>
   `
   return newItem
 }
