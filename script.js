@@ -2,10 +2,8 @@ window.onload = function() {
   let button = document.querySelector('.add__item')
   button.onclick = function(event) {
     event.preventDefault()
-    const item = document.querySelector('.item').value
     const listContent = document.querySelector('.list__content')
-    console.log(item)
-
+    const item = document.querySelector('.item').value
     listContent.appendChild(addItem(item))
   }
 }
@@ -13,8 +11,19 @@ window.onload = function() {
 const addItem = (value) => {
   const newItem = document.createElement('li')
   newItem.innerHTML = `
-  <p>${value}</p>
-  <button>Task Complete</button>
+  <h4>${value}</h4>
+  <button class='remove__item'>Task Complete</button>
   `
   return newItem
+}
+
+
+// Removing Item
+const removeItem = () => {
+  let button = document.querySelector('.remove__item')
+  button.onclick = function(event) {
+    event.preventDefault()
+    const listContent = document.querySelector('.list__content')
+    listContent.removeChild()
+  }
 }

@@ -41,7 +41,6 @@ h1 {
 
 .list__container {
   margin: 48px 52px;
-  background-color: darkgray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,20 +62,24 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.list__content li:nth-child(even) p {
+.list__content li:nth-child(even) h3 {
   background-color: lightblue;
 }
 
-.list__content p {
-  margin: 32px;
+.list__content .remove__item {
+  background-color: grey;
+  color: white;
+  padding: 4px 12px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

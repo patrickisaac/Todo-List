@@ -32,7 +32,6 @@ h1 {
 
 .list__container {
   margin: 48px 52px;
-  background-color: darkgray;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -44,18 +43,22 @@ h1 {
 
   li {
     display: flex;
-    flex-flow: row wrap; 
+    flex-flow: column wrap; 
     align-items: center; 
   }
 
   li:nth-child(even) {
-    p {
+    h4 {
       background-color: lightblue;
     }
   }
 
-  p {
-    margin: 32px;
+  .remove__item {
+    background-color: grey;
+    color: white;
+    padding: 4px 12px;
+    border: 1px solid black;
+    border-radius: 5px;    
   }
 }
 
