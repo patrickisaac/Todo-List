@@ -1,0 +1,29 @@
+body {
+  background-color: lightgrey;
+}
+
+h2 {
+  text-align: center;
+  // color: grey;
+}
+
+.search__container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    height: 16px;
+    width: 128px;
+    margin: 12px;
+  }
+
+  button {
+    background-color: grey;
+    color: white;
+    padding: 8px 32px;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+}
