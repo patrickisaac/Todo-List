@@ -7,3 +7,5 @@ Practicing the following skills:
 HTML
 CSS
 JavaScript (Expanding my knowledge of DOM manipulation)
+
+Deployed with Surge (http://todo-list-vanillajs.surge.sh)
