@@ -5,11 +5,12 @@ window.addEventListener('load', function() {
     const listContent = document.querySelector('.list__content')
     const item = document.querySelector('.item').value
     listContent.appendChild(addItem(item))
+    listContent.insertBefore(addItem, item)
   }
 })
 
-
 const addItem = (value) => {
+  document.querySelector('.item').value = ''
   const newItem = document.createElement('li')
   newItem.innerHTML = `
   <h4>${value}</h4>
@@ -19,6 +20,7 @@ const addItem = (value) => {
 }
 
 const removeItem = () => {
-  const listContent = document.querySelector('.list__content')
-  listContent.removeChild(listContent.childNodes[0])
+  const item = event.target.parentNode
+  const parent = item.parentNode
+  parent.removeChild(item)
 }
