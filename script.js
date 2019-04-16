@@ -1,6 +1,6 @@
 window.onload = function() {
-  let button = document.querySelector('.add__item')
-  button.onclick = function(event) {
+  let addButton = document.querySelector('.add__item')
+  addButton.onclick = function(event) {
     event.preventDefault()
     const listContent = document.querySelector('.list__content')
     const item = document.querySelector('.item').value

@@ -40,7 +40,7 @@ h1 {
 }
 
 .list__container {
-  margin: 48px 52px;
+  margin: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +54,7 @@ h1 {
 }
 
 .list__content {
+  margin: 4px;
   padding: 0;
   list-style: none;
 }
@@ -69,16 +70,22 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 8px;
+  margin: 8px;
+  border-bottom: 1px solid black;
 }
 
-.list__content li:nth-child(even) h3 {
-  background-color: lightblue;
+.list__content h4 {
+  margin: 12px;
 }
 
 .list__content .remove__item {
   background-color: grey;
   color: white;
-  padding: 4px 12px;
+  padding: 4px 8px;
   border: 1px solid black;
   border-radius: 5px;
 }

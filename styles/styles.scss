@@ -31,32 +31,35 @@ h1 {
 }
 
 .list__container {
-  margin: 48px 52px;
+  margin: 8px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .list__content {
+  margin: 4px;
   padding: 0;
   list-style: none;
 
   li {
     display: flex;
     flex-flow: column wrap; 
-    align-items: center; 
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 8px;
+    margin: 8px;
+    border-bottom: 1px solid black;
   }
 
-  li:nth-child(even) {
-    h4 {
-      background-color: lightblue;
-    }
+  h4 {
+    margin: 12px;
   }
 
   .remove__item {
     background-color: grey;
     color: white;
-    padding: 4px 12px;
+    padding: 4px 8px;
     border: 1px solid black;
     border-radius: 5px;    
   }
