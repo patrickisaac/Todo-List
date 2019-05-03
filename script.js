@@ -2,14 +2,17 @@ const addItem = () => {
   const listContent = document.querySelector('.list__content')
   const item = document.querySelector('.item').value
 
-  const newItem = document.createElement('li')
-  newItem.innerHTML = `
-  <h4>${item}</h4>
-  <button onclick='removeItem()' class='remove__item'>Task Complete</button>
-  `
-  listContent.appendChild(newItem)
-
-  clearText()
+  if(item !== '') {
+    const newItem = document.createElement('li')
+    newItem.innerHTML = `
+    <h4>${item}</h4>
+    <button onclick='removeItem()' class='remove__item'>Task Complete</button>
+    `
+    listContent.appendChild(newItem)
+    clearText()
+  } else {
+    alert('Please provide valid task')
+  }
 }
 
 const removeItem = () => {
